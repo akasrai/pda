@@ -4,7 +4,7 @@ function addGlassEffectHeader() {
     return select("header").addClass("glass-effect");
   }
 
-  select("header").addClass("box-shadow");
+  select("header").removeClass("box-shadow");
   return select("header").removeClass("glass-effect");
 }
 

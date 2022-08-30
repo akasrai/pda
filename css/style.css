@@ -35,7 +35,6 @@
   padding: 10px 25px;
   text-decoration: none;
   display: block;
-  color: var(--dark);
   background: -webkit-linear-gradient(var(--black), var(--green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-right: 10px;
   color: var(--dark);
   transition: linear 0.3s;
 }
@@ -80,6 +79,18 @@
   );
   color: var(--white);
   border-color: var(--instagram-blue);
+
+  background: linear-gradient(transparent, transparent) padding-box,
+    linear-gradient(
+        150deg,
+        var(--instagram-blue),
+        var(--instagram-purple),
+        var(--instagram-red),
+        var(--instagram-yellow),
+        var(--instagram-orange)
+      )
+      border-box;
+  border: 1px solid transparent;
 }
 
 .social .youtube:hover {
@@ -90,13 +101,12 @@
 
 .hero-banner {
   background-image: linear-gradient(180deg, var(--light-pink), var(--white));
-  border-radius: 10px;
   margin-bottom: -50px;
   padding-top: 50px;
 }
 
 .slogan {
-  padding: 130px 0;
+  padding: 90px 0;
 }
 
 .slogan h1 {
@@ -109,7 +119,7 @@
 .slogan h1 .cursive {
   font-family: "Qwitcher Grypen", cursive;
   font-size: 150px;
-  background: -webkit-linear-gradient(var(--instagram-blue), var(--pink));
+  background: -webkit-linear-gradient(var(--pink), var(--facebook));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-left: 18px;
@@ -153,10 +163,6 @@
   box-shadow: 0 3px 9px var(--light-gray);
 }
 
-.services .service {
-  /* background: red; */
-}
-
 .services .service .icon {
   width: 50px;
   height: 50px;
@@ -192,7 +198,7 @@
 
 .products .product {
   padding: 30px;
-  box-shadow: 0 3px 9px var(--light-gray);
+  box-shadow: 0 3px 10px var(--light-gray);
   border-radius: 10px;
 }
 
@@ -281,14 +287,21 @@
   font-style: normal;
 }
 
-.testimonial .testimonial__content .testimonial__content--name {
-  font-size: 18px;
+.testimonial .testimonial__content .testimonial__content-name {
+  font-size: 40px;
   font-style: normal;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Qwitcher Grypen", cursive;
   background: -webkit-linear-gradient(var(--instagram-blue), var(--pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 15px 0;
+  margin-top: 20px;
+}
+
+.testimonial .testimonial__content .testimonial__content-role {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--disabled);
 }
 
 .testimonials .testimonial__index-wrapper {
@@ -306,4 +319,25 @@
 .testimonials .testimonial__index-wrapper .testimonial__index:hover {
   background: var(--instagram-blue);
   transition: linear 0.3s;
+}
+
+.testimonials .testimonial__index-wrapper .testimonial__index--active {
+  background: var(--instagram-blue);
+  transition: linear 0.3s;
+}
+
+.footer__address p {
+  margin: 5px 0;
+}
+
+.footer__menu {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.footer__menu li a {
+  text-decoration: none;
+  margin: 5px 0;
+  display: inline-block;
+  padding: 0;
 }
