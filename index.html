@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="./css/style.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>pda | Beauty and Cosmetic Shop</title>
 </head>
 
 <body>
-    <section class="hero-banner-section">
-
+    <section class="header-section">
         <header>
             <div class="container flex justify-content-between">
                 <div class="logo">
@@ -22,8 +21,8 @@
                 <nav class="navbar flex">
                     <ul class="flex justify-content-end">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Members</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Products</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -60,7 +59,7 @@
                         </a>
 
                         <button class="btn btn-primary">
-                            Sign up <i class="ion-ios-arrow-forward"></i>
+                            Contact <i class="ion-ios-call"></i>
                         </button>
                     </div>
                 </div>
@@ -151,6 +150,41 @@
         </div>
     </section>
 
+    <section id="testimonials" class="testimonials-block">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="bold">Testimonials</h1>
+                <p>See what people are saying...</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial flex m-auto align-items-center">
+                    <div class="testimonial__image-wrapper">
+                        <div class="testimonial__image-bubble-1"></div>
+                        <div class="testimonial__image">
+                            <img src="./img/phebe.webp" alt="Jon Doe" />
+                        </div>
+                        <div class="testimonial__image-bubble-2"></div>
+                    </div>
+                    <div class="testimonial__content">
+                        <span class="quote">“”</span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore, rem dolores iste
+                            cupiditate aperiam veritatis quo explicabo inventore fugiat saepe temporibus. Praesentium
+                            laboriosam deleniti corrupti. Illo numquam autem soluta!
+                        </p>
+                        <p class="testimonial__content--name bold">Phebe Buffay</p>
+                    </div>
+                </div>
+                <div class="testimonial__index-wrapper flex justify-content-center">
+                    <div class="testimonial__index"></div>
+                    <div class="testimonial__index"></div>
+                    <div class="testimonial__index"></div>
+                    <div class="testimonial__index"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer-section">
         <div class="container">
             <div class="footer">
@@ -173,7 +207,13 @@
                     </div>
                 </div>
                 <hr class="hr" />
-                <p class="text-center">&copy; PDA, 2022</p>
+                <div class="text-center">
+                    <span>&copy;</span>
+                    <div class="logo d-inline">
+                        <h1 class="d-inline"><span>.</span>pda</h1>
+                    </div>
+                    <span>, 2022</span>
+                </div>
             </div>
         </div>
     </footer>

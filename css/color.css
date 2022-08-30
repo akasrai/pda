@@ -1,7 +1,7 @@
 :root {
-  --primary: #d3ecff;
-  --secondary: #ebffe7;
-  --third: #ffdcec;
+  --light-blue: #d3ecff;
+  --light-green: #ebffe7;
+  --light-pink: #ffdcec;
   --black: #000;
   --white: #fff;
   --pink: #cb00ff;
@@ -15,4 +15,5 @@
   --instagram-blue: #4c68d7;
   --instagram-maroon: #cd486b;
   --youtube-red: #ff0000;
+  --light-gray: #e7e7e7;
 }
